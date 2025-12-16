@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rasheed Turan - Senior Accountant & Finance Manager</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .section-title {
+            position: relative;
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            border-radius: 2px;
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        .skill-badge {
+            transition: all 0.3s ease;
+        }
+        
+        .skill-badge:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+        }
+        
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 15px rgba(0,0,0,0.3);
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .whatsapp-float:hover {
+            background-color: #20ba5a;
+            transform: scale(1.1);
+        }
+        
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -8px;
+            top: 8px;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: #667eea;
+            border: 3px solid #fff;
+            box-shadow: 0 0 0 3px #667eea33;
+        }
+        
+        @media (max-width: 768px) {
+            .whatsapp-float {
+                width: 50px;
+                height: 50px;
+                bottom: 20px;
+                right: 20px;
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    
+    <!-- Header Section -->
+    <header class="gradient-bg text-white">
+        <div class="container mx-auto px-4 py-16 md:py-24">
+            <div class="max-w-4xl mx-auto text-center">
+                <div class="mb-6">
+                    <div class="w-32 h-32 mx-auto bg-white rounded-full flex items-center justify-center shadow-2xl">
+                        <span class="text-6xl font-bold text-purple-600">RT</span>
+                    </div>
+                </div>
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Rasheed Turan</h1>
+                <p class="text-xl md:text-2xl mb-6 text-purple-100">Senior Accountant & Finance Manager</p>
+                <div class="flex flex-wrap justify-center gap-4 mb-8">
+                    <a href="mailto:rt@rasheedturan.com" class="flex items-center gap-2 text-white hover:text-purple-200 transition">
+                        <i class="fas fa-envelope"></i>
+                        <span class="text-sm md:text-base">rt@rasheedturan.com</span>
+                    </a>
+                    <a href="tel:+9647518776500" class="flex items-center gap-2 text-white hover:text-purple-200 transition">
+                        <i class="fas fa-phone"></i>
+                        <span class="text-sm md:text-base">0751 877 65 00</span>
+                    </a>
+                    <span class="flex items-center gap-2">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span class="text-sm md:text-base">Erbil, Ankawa</span>
+                    </span>
+                </div>
+                <a href="cv.pdf" download class="inline-flex items-center gap-2 bg-white text-purple-600 px-8 py-3 rounded-full font-semibold hover:bg-purple-50 transition shadow-lg">
+                    <i class="fas fa-download"></i>
+                    Download CV
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Professional Summary -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-8 text-center section-title">About Me</h2>
+            <div class="bg-gradient-to-r from-purple-50 to-blue-50 p-8 rounded-2xl shadow-lg">
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    Dynamic Senior Accountant and Finance Manager with over <strong>9 years</strong> of progressive experience in full-cycle accounting, financial reporting, budgeting & forecasting, and tax compliance. Skilled at optimizing month-end close processes (reducing closing time by 15%), implementing ERP systems (Odoo ERP, XTRA ERP), and strengthening internal controls through bank reconciliations and cost accounting analyses. Proficient in QuickBooks, Microsoft Power BI, Excel (Power Query, Pivot Tables), and currently pursuing <strong>CMA designation</strong> to drive strategic financial decision-making.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-12 text-center section-title">Professional Experience</h2>
+            
+            <div class="space-y-8">
+                <!-- Experience 1 -->
+                <div class="bg-white p-6 md:p-8 rounded-2xl shadow-lg card-hover border-l-4 border-purple-500 relative pl-8">
+                    <div class="timeline-item">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+                            <div>
+                                <h3 class="text-2xl font-bold text-gray-800">Senior Accountant</h3>
+                                <p class="text-purple-600 font-semibold">Last Minute Factory</p>
+                                <p class="text-gray-600">Erbil</p>
+                            </div>
+                            <span class="bg-purple-100 text-purple-700 px-4 py-2 rounded-full text-sm font-semibold mt-2 md:mt-0 inline-block">Oct 2024 - Present</span>
+                        </div>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-purple-500 mt-1 mr-3"></i>
+                                <span>Manage monthly and quarterly closing procedures, including journal entries, account reconciliations, and financial reporting</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-purple-500 mt-1 mr-3"></i>
+                                <span>Lead the implementation and integration of ERP systems for financial operations</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-purple-500 mt-1 mr-3"></i>
+                                <span>Prepare tax filings, ensure regulatory compliance, and support audit processes</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-purple-500 mt-1 mr-3"></i>
+                                <span>Analyze cost structures and advise management on financial decision-making</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience 2 -->
+                <div class="bg-white p-6 md:p-8 rounded-2xl shadow-lg card-hover border-l-4 border-purple-500 relative pl-8">
+                    <div class="timeline-item">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+                            <div>
+                                <h3 class="text-2xl font-bold text-gray-800">Accounting Manager</h3>
+                                <p class="text-purple-600 font-semibold">The Two Princes - English Pub and Restaurant</p>
+                                <p class="text-gray-600">Erbil</p>
+                            </div>
+                            <span class="bg-purple-100 text-purple-700 px-4 py-2 rounded-full text-sm font-semibold mt-2 md:mt-0 inline-block">Apr 2022 - Oct 2024</span>
+                        </div>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-purple-500 mt-1 mr-3"></i>
+                                <span>Managed full-cycle accounting operations including accounts payable, accounts receivable, and general ledger</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-purple-500 mt-1 mr-3"></i>
+                                <span>Implemented process improvements that reduced monthly closing time by 15%</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-purple-500 mt-1 mr-3"></i>
+                                <span>Supervised a team of junior accountants and coordinated with external auditors</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience 3 -->
+                <div class="bg-white p-6 md:p-8 rounded-2xl shadow-lg card-hover border-l-4 border-purple-500 relative pl-8">
+                    <div class="timeline-item">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+                            <div>
+                                <h3 class="text-2xl font-bold text-gray-800">Chief Accountant</h3>
+                                <p class="text-purple-600 font-semibold">Viafet Genomics Centre</p>
+                                <p class="text-gray-600">Erbil</p>
+                            </div>
+                            <span class="bg-purple-100 text-purple-700 px-4 py-2 rounded-full text-sm font-semibold mt-2 md:mt-0 inline-block">Nov 2018 - Apr 2022</span>
+                        </div>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-purple-500 mt-1 mr-3"></i>
+                                <span>Led the preparation of accurate financial statements, income statements, and balance sheets</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-purple-500 mt-1 mr-3"></i>
+                                <span>Developed internal controls, improving reporting accuracy and operational efficiency</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-purple-500 mt-1 mr-3"></i>
+                                <span>Automated reporting processes using Excel dashboards and Power Query</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience 4 -->
+                <div class="bg-white p-6 md:p-8 rounded-2xl shadow-lg card-hover border-l-4 border-purple-500 relative pl-8">
+                    <div class="timeline-item">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+                            <div>
+                                <h3 class="text-2xl font-bold text-gray-800">Finance Manager</h3>
+                                <p class="text-purple-600 font-semibold">Gabrini Cosmetics Company</p>
+                                <p class="text-gray-600">Syria</p>
+                            </div>
+                            <span class="bg-purple-100 text-purple-700 px-4 py-2 rounded-full text-sm font-semibold mt-2 md:mt-0 inline-block">May 2015 - Mar 2018</span>
+                        </div>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-purple-500 mt-1 mr-3"></i>
+                                <span>Directed the financial planning, budgeting, and forecasting processes</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-purple-500 mt-1 mr-3"></i>
+                                <span>Increased operational profitability by identifying cost-saving opportunities</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Experience 5 -->
+                <div class="bg-white p-6 md:p-8 rounded-2xl shadow-lg card-hover border-l-4 border-purple-500 relative pl-8">
+                    <div class="timeline-item">
+                        <div class="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+                            <div>
+                                <h3 class="text-2xl font-bold text-gray-800">Accountant</h3>
+                                <p class="text-purple-600 font-semibold">Gabrini Cosmetics Company</p>
+                                <p class="text-gray-600">Syria</p>
+                            </div>
+                            <span class="bg-purple-100 text-purple-700 px-4 py-2 rounded-full text-sm font-semibold mt-2 md:mt-0 inline-block">Feb 2013 - May 2015</span>
+                        </div>
+                        <ul class="space-y-2 text-gray-700">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-purple-500 mt-1 mr-3"></i>
+                                <span>Processed day-to-day accounting tasks, including journal entries, payroll, and reconciliation</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-purple-500 mt-1 mr-3"></i>
+                                <span>Assisted in audit preparation and documentation review</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-12 text-center section-title">Technical Skills</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Accounting Software -->
+                <div class="bg-gradient-to-br from-purple-50 to-blue-50 p-6 rounded-2xl shadow-lg">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
+                        <i class="fas fa-calculator text-purple-600 mr-3"></i>
+                        Accounting Software
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-badge bg-white px-4 py-2 rounded-full text-sm font-semibold text-gray-700 shadow">QuickBooks</span>
+                        <span class="skill-badge bg-white px-4 py-2 rounded-full text-sm font-semibold text-gray-700 shadow">Xero</span>
+                        <span class="skill-badge bg-white px-4 py-2 rounded-full text-sm font-semibold text-gray-700 shadow">Al Ameen</span>
+                        <span class="skill-badge bg-white px-4 py-2 rounded-full text-sm font-semibold text-gray-700 shadow">Al Edarisoft</span>
+                    </div>
+                </div>
+
+                <!-- ERP Systems -->
+                <div class="bg-gradient-to-br from-blue-50 to-purple-50 p-6 rounded-2xl shadow-lg">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
+                        <i class="fas fa-database text-purple-600 mr-3"></i>
+                        ERP Systems
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-badge bg-white px-4 py-2 rounded-full text-sm font-semibold text-gray-700 shadow">Odoo ERP</span>
+                        <span class="skill-badge bg-white px-4 py-2 rounded-full text-sm font-semibold text-gray-700 shadow">Zoho ERP</span>
+                        <span class="skill-badge bg-white px-4 py-2 rounded-full text-sm font-semibold text-gray-700 shadow">ERPNext</span>
+                        <span class="skill-badge bg-white px-4 py-2 rounded-full text-sm font-semibold text-gray-700 shadow">Daftra ERP</span>
+                        <span class="skill-badge bg-white px-4 py-2 rounded-full text-sm font-semibold text-gray-700 shadow">Xtra ERP</span>
+                    </div>
+                </div>
+
+                <!-- Analytics Tools -->
+                <div class="bg-gradient-to-br from-purple-50 to-blue-50 p-6 rounded-2xl shadow-lg">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
+                        <i class="fas fa-chart-line text-purple-600 mr-3"></i>
+                        Business Analytics
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-badge bg-white px-4 py-2 rounded-full text-sm font-semibold text-gray-700 shadow">Microsoft Power BI</span>
+                        <span class="skill-badge bg-white px-4 py-2 rounded-full text-sm font-semibold text-gray-700 shadow">Google Data Studio</span>
+                        <span class="skill-badge bg-white px-4 py-2 rounded-full text-sm font-semibold text-gray-700 shadow">SPSS</span>
+                    </div>
+                </div>
+
+                <!-- Advanced Excel -->
+                <div class="bg-gradient-to-br from-blue-50 to-purple-50 p-6 rounded-2xl shadow-lg">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4 flex items-center">
+                        <i class="fas fa-file-excel text-purple-600 mr-3"></i>
+                        Advanced Microsoft Excel
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="skill-badge bg-white px-4 py-2 rounded-full text-sm font-semibold text-gray-700 shadow">Power Query</span>
+                        <span class="skill-badge bg-white px-4 py-2 rounded-full text-sm font-semibold text-gray-700 shadow">Power Pivot</span>
+                        <span class="skill-badge bg-white px-4 py-2 rounded-full text-sm font-semibold text-gray-700 shadow">Pivot Tables</span>
+                        <span class="skill-badge bg-white px-4 py-2 rounded-full text-sm font-semibold text-gray-700 shadow">Dashboards</span>
+                        <span class="skill-badge bg-white px-4 py-2 rounded-full text-sm font-semibold text-gray-700 shadow">Basic VBA</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Competencies -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-12 text-center section-title">Core Competencies</h2>
+            
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-xl shadow-lg card-hover text-center">
+                    <i class="fas fa-chart-bar text-4xl text-purple-600 mb-4"></i>
+                    <h3 class="font-bold text-gray-800 mb-2">Financial Reporting</h3>
+                    <p class="text-gray-600 text-sm">& Analysis</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-lg card-hover text-center">
+                    <i class="fas fa-clipboard-list text-4xl text-purple-600 mb-4"></i>
+                    <h3 class="font-bold text-gray-800 mb-2">Budgeting</h3>
+                    <p class="text-gray-600 text-sm">& Forecasting</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-lg card-hover text-center">
+                    <i class="fas fa-file-invoice-dollar text-4xl text-purple-600 mb-4"></i>
+                    <h3 class="font-bold text-gray-800 mb-2">Tax Compliance</h3>
+                    <p class="text-gray-600 text-sm">& Filing</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-lg card-hover text-center">
+                    <i class="fas fa-university text-4xl text-purple-600 mb-4"></i>
+                    <h3 class="font-bold text-gray-800 mb-2">Bank</h3>
+                    <p class="text-gray-600 text-sm">Reconciliations</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-lg card-hover text-center">
+                    <i class="fas fa-coins text-4xl text-purple-600 mb-4"></i>
+                    <h3 class="font-bold text-gray-800 mb-2">Cost</h3>
+                    <p class="text-gray-600 text-sm">Accounting</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-lg card-hover text-center">
+                    <i class="fas fa-shield-alt text-4xl text-purple-600 mb-4"></i>
+                    <h3 class="font-bold text-gray-800 mb-2">Internal Controls</h3>
+                    <p class="text-gray-600 text-sm">& Audit Support</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-lg card-hover text-center">
+                    <i class="fas fa-users text-4xl text-purple-600 mb-4"></i>
+                    <h3 class="font-bold text-gray-800 mb-2">Team Leadership</h3>
+                    <p class="text-gray-600 text-sm">& Training</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-xl shadow-lg card-hover text-center">
+                    <i class="fas fa-lightbulb text-4xl text-purple-600 mb-4"></i>
+                    <h3 class="font-bold text-gray-800 mb-2">Problem-Solving</h3>
+                    <p class="text-gray-600 text-sm">& Critical Thinking</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-12 text-center section-title">Education & Certifications</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-gradient-to-br from-purple-50 to-blue-50 p-8 rounded-2xl shadow-lg card-hover">
+                    <div class="flex items-start">
+                        <i class="fas fa-graduation-cap text-4xl text-purple-600 mr-4"></i>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">Bachelor's Degree in Economics</h3>
+                            <p class="text-purple-600 font-semibold">University of Aleppo - Syria</p>
+                            <p class="text-gray-600">2011</p>
+                            <div class="mt-4 bg-yellow-100 border-l-4 border-yellow-500 p-3 rounded">
+                                <p class="text-sm font-semibold text-gray-700">
+                                    <i class="fas fa-trophy text-yellow-600 mr-2"></i>
+                                    Al-Basel Award for Top Outstanding Students
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gradient-to-br from-blue-50 to-purple-50 p-8 rounded-2xl shadow-lg card-hover">
+                    <div class="flex items-start">
+                        <i class="fas fa-certificate text-4xl text-purple-600 mr-4"></i>
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-800 mb-2">CMA Program Student</h3>
+                            <p class="text-purple-600 font-semibold">Institute of Management Accountants (IMA)</p>
+                            <p class="text-gray-600">In Progress</p>
+                            <div class="mt-4">
+                                <span class="bg-purple-100 text-purple-700 px-4 py-2 rounded-full text-sm font-semibold">
+                                    Certified Management Accountant
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Languages Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-12 text-center section-title">Languages</h2>
+            
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white p-8 rounded-2xl shadow-lg card-hover text-center">
+                    <i class="fas fa-language text-5xl text-purple-600 mb-4"></i>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">English</h3>
+                    <p class="text-purple-600 font-semibold">Fluent</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-2xl shadow-lg card-hover text-center">
+                    <i class="fas fa-language text-5xl text-purple-600 mb-4"></i>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">Kurdish</h3>
+                    <p class="text-purple-600 font-semibold">Fluent</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-2xl shadow-lg card-hover text-center">
+                    <i class="fas fa-language text-5xl text-purple-600 mb-4"></i>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">Arabic</h3>
+                    <p class="text-purple-600 font-semibold">Fluent</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-12 text-center section-title">Get In Touch</h2>
+            
+            <div class="bg-gradient-to-r from-purple-600 to-blue-600 p-8 md:p-12 rounded-3xl shadow-2xl text-white text-center">
+                <h3 class="text-2xl md:text-3xl font-bold mb-4">Let's Work Together!</h3>
+                <p class="text-lg mb-8 text-purple-100">I'm always open to discussing new opportunities and collaborations.</p>
+                
+                <div class="flex flex-wrap justify-center gap-6">
+                    <a href="mailto:rt@rasheedturan.com" class="bg-white text-purple-600 px-8 py-4 rounded-full font-bold hover:bg-purple-50 transition flex items-center gap-2 shadow-lg">
+                        <i class="fas fa-envelope"></i>
+                        Email Me
+                    </a>
+                    
+                    <a href="https://wa.me/9647518776500" target="_blank" class="bg-green-500 text-white px-8 py-4 rounded-full font-bold hover:bg-green-600 transition flex items-center gap-2 shadow-lg">
+                        <i class="fab fa-whatsapp"></i>
+                        WhatsApp
+                    </a>
+                    
+                    <a href="tel:+9647518776500" class="bg-white text-purple-600 px-8 py-4 rounded-full font-bold hover:bg-purple-50 transition flex items-center gap-2 shadow-lg">
+                        <i class="fas fa-phone"></i>
+                        Call Me
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="gradient-bg text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p class="text-lg mb-2">Rasheed Turan</p>
+            <p class="text-purple-200">Senior Accountant & Finance Manager</p>
+            <p class="text-purple-200 text-sm mt-4">© 2024 All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/9647518776500" target="_blank" class="whatsapp-float" title="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+</body>
+</html>
